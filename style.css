@@ -1,0 +1,110 @@
+@font-face {
+    font-family: Made;
+    src: url('made_evolve_sans/MADE\ Evolve\ Sans\ Bold\ \(PERSONAL\ USE\).otf') format('opentype'), 
+    url('made_evolve_sans/MADE\ Evolve\ Sans\ Bold\ \(PERSONAL\ USE\).otf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Made', Arial;
+}
+
+body{
+    background: #F6f9ff;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #434343;
+}
+
+main.cards{
+   display: flex;
+   padding: 32px;
+}
+
+main.cards section.cards-interaction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 256px;
+    margin-left: 2rem;
+}
+
+main.cards section.cards-interaction:first-child{
+    margin-left: 0;
+}
+
+main.cards section.cards-interaction .icon{
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.cards-interaction img{
+ 
+   width: 100%;
+}
+
+main.cards section.cards-interaction h3{
+    margin-bottom: 20px ;
+}
+
+main.cards section.cards-interaction span{
+    font-weight: 100;
+    width: 280px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+main.cards section.cards-interaction button{
+    color: rgb(255, 253, 253);
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    border-radius: 15px;
+    border: none;
+    margin: 10px 15px;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 600;
+    transition: all .2s ease-in-out;
+}
+
+
+main.cards section.cards-interaction button:hover{
+    transform: scale(1.1);
+}
+
+main.cards section.cards-interaction.contact button{
+    box-shadow: 5px 5px 15px -5px #DBC4FF;
+    background: linear-gradient(45deg, #9F66FF, #DFC8FF) ;
+}
+
+main.cards section.cards-interaction.shop button{
+    box-shadow: 5px 5px 15px -5px #AFD6FF;
+    background: linear-gradient(45deg, #3E8AFF, #BBDEFF ) ;
+}
+
+main.cards section.cards-interaction.about button{
+    box-shadow: 5px 5px 15px -5px #FFC1D5;
+    background: linear-gradient(45deg, #FE5F8F, #FFC7D9) ;
+}
+
+main.cards section.cards-interaction.contact{
+    box-shadow: 20px 20px 45px -30px #DBC4FF;
+}
+
+main.cards section.cards-interaction.shop{
+    box-shadow: 20px 20px 45px -30px #AFD6FF;
+}
+
+main.cards section.cards-interaction.about{
+    box-shadow: 20px 20px 45px -30px #FFC1D5;
+}
